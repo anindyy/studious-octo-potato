@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+}
+
+::selection {
+    background: rgb(255, 148, 61);
+    color: rgb(255, 255, 255);
+}
+
+#cover {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 232, 210);
+}
+
+#main {
+    position: absolute;
+    vertical-align: center;
+    display: grid;
+}
+
+#colored {
+    background-color: rgb(255, 148, 61);
+    border-top-left-radius: 20px;
+}
+
+#title {
+    background-color: rgb(255, 192, 141);
+    color: rgb(255, 255, 255);
+    text-align: left;
+    font-size: 16pt;
+    padding: 10px 0 10px 10px;
+    grid-column: 2 / span 6;
+    border-top-right-radius: 20px;
+}
+
+#content {
+    width: 500px;
+    height: 200px;
+    grid-column: 1 / span 6;
+    padding: 30px;
+    background-color: rgb(255, 255, 255);
+    font-size: 12px;
+}
+
+#content b {
+    color: rgb(255, 149, 61);
+}
+
+.links:first-of-type {
+    border-bottom-left-radius: 20px;
+}
+
+.links:last-of-type {
+    border-bottom-right-radius: 20px;
+}
+
+.links {
+    height: 40px;
+    grid-column: span 3;
+    border: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 192, 141);
+    font-size: 12pt;
+    transition-duration: 0.7s;
+}
+
+.links:hover {
+    background-color: rgba(255, 192, 141, 0.57);
+}
+
+.links:active {
+    background-color: rgb(255, 191, 139);
+}
